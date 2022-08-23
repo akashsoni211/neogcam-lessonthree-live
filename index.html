@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Akash Soni's Component Library</h1>
 
-    <p>I am attending neog.camp and i am currently completing levelZero 
+    <p>I am attending neog.camp and i am currently completing levelZero
         one weekend and assignment at a time
     </p>
     <hr>
     <h1>@typography</h1>
     <h1>The biggest heading h1</h1>
     <h2>The second biggest heading h2</h2>
-    <p>This is normal text. Long running text would look like would look like this 
+    <p>This is normal text. Long running text would look like would look like this
         on your websit. This will autofold based on the width
     </p>
     <small>This is relatively smaller text</small>
     <hr>
     <h1>@Container</h1>
     <h3>@Fluid Container</h3>
-    <div> This is a field container. it will go full width of page.With some margin.</div>
+    <div class="container"> This is a field container. it will go full width of page.With some margin.</div>
     <h3>@center container</h3>
-    <div> This is a centered container. it will go till the specified width</div>
+    <div class="container container-center"> This is a centered container. it will go till the specified width</div>
     <hr>
     <h1>@links</h1>
-    <a href="#">Primary Link</a>
-    <a href="#">Secondary Link</a>
+    <a class="PrimaryLink" href="#">Primary Link</a>
+    <a class="SecondaryLink" href="#">Secondary Link</a>
+    <br><br>
     <hr>
     <h1>@lists</h1>
     <h2>unordered lists</h2>
@@ -41,14 +44,14 @@
     </ul>
     <h2>inline lists</h2>
     <p>Instead of going in a new row, we will create a list which will take columns</p>
-    <ul>
+    <ul type = "none" class="inlineList">
         <li>item One</li>
         <li>item two</li>
         <li>item three</li>
     </ul>
     <h2>reverse ordered lists</h2>
     <p>Counting of will go reverse for this list</p>
-    <ol>
+    <ol reversed>
         <li>some item</li>
         <li>some item</li>
         <li>some item</li>
@@ -56,36 +59,45 @@
     <hr>
     <h1>@nav</h1>
     <p>navigationn is used on the top of the page and used to get to differnt pages</p>
-    <nav><h1>theBrandName</h1>
-        <ul type = "None">
+    <nav class="container navigation">
+        <h3>theBrandName</h3>
+        <ul class="inlineList navlist" type = "None">
             <li>home</li>
             <li>products</li>
             <li>about</li>
         </ul>
     </nav>
+    <br>
     <hr>
     <h1>@header</h1>
-    <img src="logo.png" alt="Picture Here">
-    <h1>this is heading h1 inside header</h1>
+    <header class="container-center">
+        <img src="logo.png" alt="Picture Here" height="500px" width="700px">
+        <h1 class="container-center headerHead">this is heading h1 inside header</h1>
+    </header>
     <hr>
     <h1>@section</h1>
     <p>a section is used to separate parts of pages. In marketing websites you would have seen a header followed by sections of features, team,pricing,content info etc.</p>
     <h2>@normal section</h2>
-    <h1>Heading inside section</h1>
-    <p>Text defining this section and many more things</p>
-    <button>Primary Button</button>
-    <h1>@an off white section</h1>
-
-    <h1>inside off white section</h1>
-    <p>Text definig this section and many more things</p>
-    <button>Primary Button</button>
+    <section>
+      <h2>heading inside section</h2>
+      <p>Text defining this section and many more things</p>
+      <button class="PrimaryLink">Primary Button</button>
+    </section>
+      <h1>@an off white section</h1>
+    <section class="offwhitesection">
+      <h2>inside off white section</h2>
+      <p>Text definig this section and many more things</p>
+      <button class="PrimaryLink">Primary Button</button>
+    </section>
     <hr>
     <h1>@footer</h1>
-    <h1>Header inside footer</h1>
-    <ul type="None">
-        <li>socialone</li>
-        <li>socialtwo</li>
-        <li>socialthree</li>
-    </ul>
+    <footer>
+      <h2>Header inside footer</h2>
+      <ul class="inlineList" type="None">
+          <li>socialone</li>
+          <li>socialtwo</li>
+          <li>socialthree</li>
+      </ul>
+    </footer>
 </body>
 </html>
