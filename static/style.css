@@ -3,6 +3,11 @@
 
 }
 
+body{
+    margin: 0%;
+    background-color: white;
+}
+
 .container{
     padding: 0rem 1rem;
 }
@@ -20,12 +25,12 @@
 .primaryLink{
     background-color:#059669 ;
     padding: .5rem;
-    border-radius: .5rem;
 }
 
 .secondaryLink{
     border: .1rem solid;
     background-color: white;
+    padding: .5rem;
     color: #059669;
 }
 .inline-list > li{
@@ -62,13 +67,14 @@ header{
 
 .section{
     text-align: center;
-    max-width: 900px;
+    max-width: 650px;
     margin: auto;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .offwhite-section{
     background-color:#f5f5f5 ;
-    padding-bottom: 2rem;
 }
 
 footer{
@@ -83,4 +89,28 @@ footer{
 
 footer > ul{
     padding-inline-start: 0px;
+}
+
+.link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.project-head{
+    display: flex;
+    justify-content: center;
+}
+
+.code{
+    color: #059669;
+}
+
+.project-list{
+    padding: 0%;
+    margin: 1rem;
+    list-style: none;
+}
+
+.project-list > li{
+    margin: 1rem;
 }
